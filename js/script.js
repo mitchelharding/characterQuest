@@ -1,15 +1,39 @@
 $(document).ready(function(){
-  $("form.form-group").submit(function(){
+  $("form#form-group").submit(function(){
 
-    var dwight = $("select#leaderQ").val("leader") + $("select#intelQ").val("smart") + $("select#willQ").val("strong") + $("select#ballsQ").val("conform") + $("select#ambitionQ").val("ambitious") + $("select#bookormovieQ").val("movie");
+    var a1 = $("#leader").val();
+    var a2 = $("#follower").val();
+    var b1 = $("#smart").val();
+    var b2 = $("#dumb").val();
+    var c1 = $("#strong").val();
+    var c2 = $("#weak").val();
+    var d1 = $("#rebel").val();
+    var d2 = $("#conform").val();
+    var e1 = $("#amb").val();
+    var e2 = $("#lazy").val();
+    var f1 = $("#book").val();
+    var f2 = $("#movie").val();
 
-    if("select#leaderQ" === "leader") + ("selectintelQ" === "smart") + ("select#willQ" === "strong") + ("select#ballsQ" === "conform") + ("select#ambitionQ" === "ambitious") + ("select#bookormovieQ" === "movie"){
-      $("#result").text(Dwight Shrute);
-      $("#results").show();
-      $("img#dwights").show();
+    var dwights = a1 + b1 + c1 + d2 + e1 + f2;
+    var jimh = a1 + b1 + c1 + d1 + e2 + f2;
+    var pamh = a2 + b2 + c1 + d2 + e2 + f1;
+
+
+    if (dwights) {
+      $("#result").text("Dwight Shrute");
+      $(".result").show();
+      $("#dwights").show();
+    } else if (jimh) {
+      $("#result").text("Jim Helbert");
+      $(".result").show();
+      $("#jimh").show();
+    } else if (pamh) {
+      $("#result").text("Pam Helbert");
+      $(".result").show();
+      $("#pamh").show();
     }
 
-      prevent.preventDefault();
+    event.preventDefault();
 
   });
 });

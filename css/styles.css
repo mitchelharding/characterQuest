@@ -8,12 +8,11 @@ button{
   width:400px;
 }
 
-#results{
+.result{
   display: none;
 }
 
 img{
   display: none;
-  height: 320px;
-  width: 280px;
+  margin-left: 30%;
 }
