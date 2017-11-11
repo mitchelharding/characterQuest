@@ -3,12 +3,16 @@
   margin: 20px;
 }
 
+label{
+
+}
+
 button{
   margin-top:20px;
   width:400px;
 }
 
-.result{
+#result{
   display: none;
 }
 
