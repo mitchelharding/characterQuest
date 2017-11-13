@@ -1,14 +1,17 @@
 $(document).ready(function(){
 
-  $( "select" )
-  .change(function() {
-    var str = "";
-    $( "select option:selected" ).each(function() {
-      str += $( this ).text() + " ";
-    });
-    $( ".result" ).text( str );
-    $("#result").show();
-    })
-    .trigger( "change" );
+    $("form#form-group").submit(function(event){
 
+
+      var results =[""];
+
+      results.map(function(result){
+      var chosen = $("select option: checked" + result).val();
+      $("." + result).text();
+
+      )};
+      alert(chosen);
+      event.preventDefault();
+
+    });
   });
